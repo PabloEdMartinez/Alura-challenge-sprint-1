@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #7bbcf1;
+  font-family: "inter" sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+#logo {
+  margin: 30px;
+}
+main {
+  display: flex;
+}
+#seccion1 {
+  flex-basis: 60%;
+}
+textarea {
+  position: relative;
+  text-align: center;
+  outline: none;
+  resize: none;
+  padding: 30px;
+  background-color: #e7f2fc;
+  border-color: #43a1ee;
+  border-radius: 8px;
+}
+.entradaTexto {
+  left: 10%;
+  width: 70%;
+  height: 300px;
+}
+#st {
+  background-image: none;
+}
+.salidaTexto {
+  background-image: url(./img/Muñeco.png);
+  background-size: 200px;
+  left: 5%;
+  width: 70%;
+  height: 90%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 90px;
+}
+.aviso {
+  position: relative;
+  left: 39%;
+  font-size: 15px;
+}
+div {
+  margin-left: 40%;
+}
+button {
+  padding: 8px;
+  border-style: solid;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.15s all;
+}
+button:hover {
+  color: #2e3683;
+  transform: scale(1.08);
+}
+#btnCopiar {
+  background-color: #e7f2fc;
+  border-color: #e2e3e4;
+  position: relative;
+  bottom: 40%;
+  left: 40%;
+}
+#btnE {
+  background-color: #529be0;
+  border-color: #5ba3eb;
+}
+#btnD {
+  background-color: #e7f2fc;
+  border-color: #e2e3e4;
+}
+#mensaje {
+  visibility: hidden;
+}
+.msj {
+  background: none;
+  position: relative;
+  bottom: 200px;
+  right: 32%;
+}
+#t {
+  font-weight: bold;
+  text-align: center;
+}
+#sbt {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    flex-direction: column;
+  }
+  #seccion1 {
+    flex-basis: 60%;
+  }
+  .entradaTexto {
+    left: 17%;
+    height: 320px;
+  }
+  .aviso {
+    position: relative;
+    left: 28%;
+  }
+  div {
+    margin-left: 35%;
+  }
+  .salidaTexto {
+    background-image: none;
+    top: 20px;
+    left: 17%;
+    height: 100px;
+  }
+  #btnCopiar {
+    bottom: 100px;
+    left: 50%;
+  }
+  .msj {
+    background: none;
+    position: relative;
+    bottom: 120px;
+    right: 10%;
+  }
+}

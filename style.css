@@ -7,11 +7,16 @@
   font-size: 20px;
   line-height: 150%;
 }
+.body {
+  width: 100%;
+}
 #logo {
   margin: 30px;
 }
 main {
   display: flex;
+  justify-content: center;
+
 }
 #seccion1 {
   flex-basis: 60%;
@@ -48,6 +53,7 @@ textarea {
   position: relative;
   left: 39%;
   font-size: 15px;
+  width: 220px;
 }
 div {
   margin-left: 40%;
@@ -98,37 +104,51 @@ button:hover {
 }
 
 @media screen and (max-width: 480px) {
+  #logo {
+    margin: 0 auto;
+  }
   main {
     flex-direction: column;
+    justify-content: center;
   }
   #seccion1 {
-    flex-basis: 60%;
+    flex: none;
   }
   .entradaTexto {
-    left: 17%;
+    left: 6%;
     height: 320px;
   }
   .aviso {
     position: relative;
-    left: 28%;
+    left: 15%;
   }
   div {
-    margin-left: 35%;
+    margin-left: 20%;
   }
   .salidaTexto {
     background-image: none;
     top: 20px;
-    left: 17%;
-    height: 100px;
+    left: 6%;
+    height: 220px;
   }
   #btnCopiar {
-    bottom: 100px;
-    left: 50%;
+    bottom: 90px;
+    left: 40%;
   }
   .msj {
     background: none;
     position: relative;
-    bottom: 120px;
+    bottom: 180px;
     right: 10%;
+  }
+}
+@media screen and (max-width: 375px) {
+  #btnCopiar {
+    bottom: 120px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #btnCopiar {
+    bottom: 150px;
   }
 }

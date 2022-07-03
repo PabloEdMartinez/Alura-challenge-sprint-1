@@ -1,5 +1,6 @@
 const entradaTexto = document.querySelector(".entradaTexto");
 const salidaTexto = document.querySelector(".salidaTexto");
+const btnCopiar = document.querySelector("#btnCopiar");
 let mensaje = document.querySelector("#mensaje");
 let reemplazos = [
   ["e", "enter"],
@@ -52,11 +53,13 @@ function copiarTexto() {
 }
 
 function campoVacio() {
+  btnCopiar.style.visibility = "hidden";
   salidaTexto.textContent = "";
   salidaTexto.removeAttribute("id");
   mensaje.removeAttribute("id");
 }
 function devolverID() {
+  btnCopiar.style.visibility = "visible";
   salidaTexto.setAttribute("id", "st");
   mensaje.setAttribute("id", "mensaje");
 }
